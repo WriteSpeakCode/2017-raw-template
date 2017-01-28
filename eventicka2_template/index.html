@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+	<!-- ## SITE META ## -->
+	<meta charset="utf-8">
+	<title>Eventicka II</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="./includes/img/placeholder/favicon.ico">
+
+	<!-- ## LOAD STYLSHEETS ## -->
+	<link rel="stylesheet" media="all" href="./assets/css/style.css"/>
+	
+	<!-- ## GOOGLE FONTS ## -->
+	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:200,400' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Dosis:300,500' rel='stylesheet' type='text/css'>
+	
+	<!-- ## FULLSCREEN SLIDESHOW ## -->
+	<script type="text/javascript">
+	function slide_fullscreen() {
+	jQuery(function($){
+		$.supersized({
+			// Functionality
+			slide_interval          :   8000,
+			transition              :   1, // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+			transition_speed	:   1000,
+			// Components
+			slide_links		:   'blank', // Individual links for each slide (Options: false, 'num', 'name', 'blank')
+			progress_bar	:	1,
+			slides 			:   [
+								{	image : 'http://placehold.it/1280x1024?text=SLIDE 1', title : 'Eventicka II / 2016 <br /> WordPress Coming soon', desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ut, autem, minima dolorum nemo corporis dolorem impedit deserunt error mollitia labore minus', link: '#1'
+								},
+								{	image : 'http://placehold.it/1280x1024?text=SLIDE 2', title : 'Eventicka II / 2016 <br /> WordPress Coming soon', desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ut, autem, minima dolorum nemo corporis dolorem impedit deserunt error mollitia labore minus', link: '#2'
+								}
+							]
+		});
+	});
+	}
+	window.onload = slide_fullscreen;
+	</script>	
+
+</head>
+
+<body class="home">
+
+	<!-- ## SITE NAV ## -->
+	<aside id="qcSiteNav">
+		<div class="box">
+			<h4>NAvigation</h4>
+			<ul id="qcPriNav">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="#">Event</a>
+					<!-- ## SUBMENU ## -->
+					<ul>
+						<li><a href="schedule.html">Schedule</a></li>
+						<li><a href="speakers.html">Speakers</a></li>
+						<li><a href="venue.html">Venue</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="ticket.html">Tickets</a></li>
+						<li><a href="faq.html">FAQ's</a></li>
+					</ul>
+				</li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="#">Login / Signup</a></li>
+			</ul>
+			<div id="qcCloseNav"></div>
+		</div>
+	</aside>
+	<!-- ## SITE NAV END ## -->
+		
+	<!-- ## PRIMARY HEADER ## -->
+	<header id="qcHeader">
+		<div class="qcContainer clearfix">
+			<div id="qcNavLogo" class="col-6 col">
+				<a href="index.html">
+					<img src="./assets/img/placeholder/logo_white.png" alt="LOGO" />
+				</a>
+			</div>
+			<div class="col-6 col">
+				<div id="qcOpenNav" class="tips" title="NAVIGATION"></div>
+			</div>
+		</div>
+	</header>
+	
+	<!-- ## FULLSCREEN SLIDES ## -->
+	<section id="slideContent">
+		
+		<!-- ## SLIDE TEXT ## -->
+		<div id="qcSlideText">
+			<span id="slidenumber"></span>
+			<h1 id="slidecaption"></h1>
+			<p id="slidedesc"></p>
+			<a id="slidelink" href="#" class="qcTargetLink">Read More</a>
+		</div>		
+
+		<!-- ## SLIDE CONTROLS ## -->
+		<div id="qcHomeSlideControls">
+
+			<!-- ## SLIDE DOT NAV ## -->
+			<ul id="slide-list"></ul>
+
+			<!-- ## PROGRESS BAR ## -->
+			<div id="progress-back" class="load-item">
+				<div id="progress-bar"></div>
+			</div>
+			
+			<!-- ## PREV/NEXT SLIDE ## -->
+			<div id="prevslide">&#8592;</div>
+			<div id="nextslide">&#8594;</div>
+
+		</div>
+
+	</section>
+	<!-- ## FULLSCREEN SLIDES ## -->
+	
+
+	<!-- ## LOAD JAVASCRIPTS ## -->
+	<script src="./assets/js/2.2.2.jquery.min.js" type="text/javascript"></script>
+	<script src="./assets/js/supersized.3.2.7.min.js" type="text/javascript"></script>
+	<script src="./assets/js/owl.carousel.min.js" type="text/javascript"></script>
+	<script src="./assets/js/library.js" type="text/javascript"></script>
+	<script src="./assets/js/init.js" type="text/javascript"></script>
+
+</body>
+
+</html>
